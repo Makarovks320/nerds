@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Nёrds</title>
+        <title>Nerds</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -12,34 +12,53 @@
                 <a class="main-header-logo" href="#">
                     <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
                 </a>
-                <div class="site-navigation">
-                    <ul>
-                        <li>
-                            <a href="#">Студия</a>
-                        </li>
-                        <li>
-                            <a href="#partners">Клиенты</a>
-                        </li>
-                        <li>
-                            <a href="catalog.html">Магазин</a>
-                        </li>
-                        <li>
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="site-navigation">
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#partners">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
                 <div class="basket-block">
                     <a class="basket" href="">Корзина</a>
                 </div>
             </nav>
-            <section class="representation">
-                <p class="slogan">Долго, дорого, скурпулезно</p>
-                <p>
-                    Математически выверенный дизайн для вашего сайта или мобильного приложения.
-                </p>
-                <a class="button" href="">Узнать больше</a>
-            </section>
-            <section class="slider"></section>
+                <section class="slider container">
+                        <h2 class="visually-hidden">Преимущества</h2>
+                        <div class="slider-controls">
+                            <i class="active"></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <ul class="slider-list">
+                            <li class="slider-item">
+                                <h3>Долго, дорого, скурпулезно</h3>
+                                <p class="description">Математически выверенный дизайн<br>
+                                    для вашего сайта или мобильного приложения.</p>
+                                <a href="#" class="slider-item-button button" href="#">Узнать больше</a>
+                            </li>
+                            <li class="slider-item">
+                                <h3>Любим математику как никто другой</h3>
+                                <p class="description">Никакого креатива, только математические формулы 
+                                        для расчета идеальных пропорций.</p>
+                                <a href="#" class="slider-item-button button" href="#">Узнать больше</a>
+                            </li>
+                            <li class="slider-item">
+                                <h3>Только ночь,<br>
+                                        только хардкор</h3>
+                                <p class="description">Работать днем, как все? Мы против этого.<br>
+                                        Ближе к полуночи работа только начинается.</p>
+                                <a href="#" class="slider-item-button button" href="#">Узнать больше</a>
+                            </li>
+                        </ul>
+                </section>
         </header>
         <main>
             <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
@@ -74,6 +93,7 @@
                     </ul>
                 </section>
             </div>
+            <div class="divide"></div>
             <div class="container index-columns">
                 <section class="about-us">
                     <h2 class="visually-hidden">Услуги Nёrds</h2>
@@ -82,19 +102,19 @@
                             Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                             превыше креатива. Работаем не покладая рук, как роботы.
                     </p>
-                    <b>Выполняем заказы на разработку:</b>
+                    <span>Выполняем заказы на разработку:</span>
                     <ul class="services-list">
                         <li class="service-item">Веб-сайтов любой сложности</li>
                         <li class="service-item">Мобильных приложений для iOS и Android</li>
                         <li class="service-item">Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
-                    <img>
                 </section>
                 <section class="presentation">
-                    <img>
+                    <img src="img/index/nerds-illustration.png" width="360" height="208">
                     <table class="table">
                         <caption>
-                            <b>с 2004 года Любим точность во всем:</b>
+                            с 2004 года Любим точность во всем:
+                        </caption>
                             <tr>
                                 <th>146<span>%</span></th>
                                 <th>100<span>%</span></th>
@@ -105,10 +125,10 @@
                                 <td>Соблюдение сроков</td>
                                 <td>Минимальная предоплата</td>
                             </tr>
-                        </caption>
                     </table>
                 </section>
             </div>
+            <div class="divide"></div>
             <div id="partners" class="container">
                 <section class="partners">
                     <ul class="partners-list">
@@ -116,22 +136,23 @@
                             <img src="img/logo-1.png" width="199" height="68" alt="Лого HTMLAcademy">
                         </li>
                         <li class="partner-item">
-                            <img src="img/logo-2.png" width="209" height="90" alt="Лого Borodinski">>
+                            <img src="img/logo-2.png" width="209" height="90" alt="Лого Borodinski">
                         </li>
                         <li class="partner-item">
-                            <img src="img/logo-3.png" width="185" height="52" alt="Лого Pink">>
+                            <img src="img/logo-3.png" width="185" height="52" alt="Лого Pink">
                         </li>
                         <li class="partner-item">
-                            <img src="img/logo-4.png" width="173" height="84" alt="Лого Mishka">>
+                            <img src="img/logo-4.png" width="173" height="84" alt="Лого Mishka">
                         </li>
                     </ul>
                 </section>
             </div>
+            <div class="divide"></div>
         </main>
         <footer id="contacts" class="main-footer">
-            <section class="map">
-                <img src="img/map.jpg" width="1440" height="416" alt="Изображение Nerds на карте">
-                <img src="img/map-pin.png" width="231" height="190">
+            <section class="address">
+                <img class="map" src="img/map.jpg" width="1440" height="416" alt="Изображение Nerds на карте">
+                <img class="pin" src="img/map-pin.png" width="231" height="190">
                 <aside class="contacts">
                     <strong>Nerds design studio</strong>
                     <p>
