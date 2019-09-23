@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <title>Nerds</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -151,41 +152,39 @@
         </main>
         <footer id="contacts" class="main-footer">
             <section class="address">
-                <img class="map" src="img/map.jpg" width="1440" height="416" alt="Изображение Nerds на карте">
-                <img class="pin" src="img/map-pin.png" width="231" height="190">
-                <aside class="contacts">
-                    <strong>Nerds design studio</strong>
-                    <p>
-                            191186, Санкт-Петербург, 
-                            ул. Б. Конюшенная, д. 19/8
-                    </p>
-                    <p>
-                            тел. +7 (812) 275-75-75
-                    </p>
-                    <a class="button" href="">Напишите нам</a>
-                    </a>
-                </aside>
-                <div class="modal visually-hidden">
+                <div class="contacts-container">
+                    <aside class="contacts">
+                        <strong>NЁrds design studio</strong>
+                        <p>
+                                191186, Санкт-Петербург, 
+                                ул. Б. Конюшенная, д. 19/8
+                        </p>
+                        <p>тел. +7 (812) 275-75-75</p>
+                        <a class="button" href="">Напишите нам</a>
+                    </aside>
+                </div>
+                <img class="map" src="img/map+pin.png" width="1440" height="420" alt="Изображение Nerds на карте">
+                <div class="modal">
                     <h2>Напишите нам</h2>
                     <button class="modal-content-close" type="button" title="Закрыть"></button>
                         <form action="#" method="post" name="modal-form">
                             <label>
-                                <label for="write-us--email">Ваше имя:</label> 
-                                <input id="write-us--email" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+                                <span>Ваше имя:</span>
+                                <input id="write-us--email" type="text" name="name" placeholder="Имя Фамилия" required>
                             </label>
                             <label>
-                                <label for="write-us--email">Ваш e-mail:</label> 
-                                <input id="write-us--email" type="email" name="email" placeholder="Для отправки ответа" required>
+                                <span>Ваш e-mail:</span>
+                                <input id="write-us--email" type="email" name="email" placeholder="email@example.com" required>
                             </label>
                             <label>
-                                <label for="write-us--letter">Текст письма:</label>
-                                <textarea id="write-us--letter" name="letter" rows="5" required>В свободной форме</textarea>
+                                <span>Текст письма:</span>
+                                <textarea id="write-us--letter" name="letter" rows="5" required placeholder="В свободной форме"></textarea>
                             </label>
                             <a class="button" href="#">Отправить</a>
                         </form>
                     </div>
             </section>
-            <section class="social">
+            <section class="social container">
                     <ul class="social-btns-list">
                         <li>
                             <a class="social-btn social-btn-vk">
